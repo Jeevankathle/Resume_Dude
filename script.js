@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const ACTIVE_DRAFT_KEY = "resumeDudeActiveDraftId_v2";
     const VIEW_STATE_KEY = "resumeDudeViewState";
     const POST_DOWNLOAD_DISMISSED_KEY = "resumeDudePostDownloadDismissed";
-
+            
     // Views
     const landingView = document.getElementById("landingView");
     const builderView = document.getElementById("builderView");
@@ -2695,13 +2695,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     setSaveStatus("saved", "Saved");
 
-    // Start on Landing View unless user was actively working in Builder
-    const savedView = localStorage.getItem(VIEW_STATE_KEY);
-    const hasDraftContent = Boolean(activeDraft.data?.inputName || activeDraft.data?.eduDegree1 || activeDraft.data?.inputSummary);
-    if (savedView === "builder" || (savedView !== "landing" && hasDraftContent)) {
-        showBuilderView();
-    } else {
-        showLandingView();
-    }
+    // Always open on the Home / Landing View first
+    showLandingView();
     goToStep(0);
 });
