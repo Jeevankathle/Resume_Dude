@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Resume Dude — ATS Resume Builder</title>
+    <meta name="description" content="Free ATS-friendly resume builder for students and freshers. Create a clean single-page A4 PDF in your browser, with no sign-up required.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://YOUR-DOMAIN/">
+    <meta name="theme-color" content="#17233B">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Resume Dude">
+    <meta property="og:title" content="Resume Dude — ATS Resume Builder for Freshers">
+    <meta property="og:description" content="Build a clean, ATS-friendly one-page resume in minutes. No sign-up required.">
+    <meta property="og:url" content="https://YOUR-DOMAIN/">
+    <meta property="og:image" content="https://YOUR-DOMAIN/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2317233B'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='%23FFFFFF' font-family='Arial,sans-serif' font-weight='700' font-size='14'%3ERD%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#top">Skip to content</a>
+
+    <!-- LANDING PAGE VIEW -->
+    <div id="landingView" class="landing-view">
+        <header class="landing-nav">
+            <div class="landing-nav-inner">
+                <a href="#top" class="brand-lockup" aria-label="Resume Dude Home">
+                    <span class="brand-mark" aria-hidden="true">RD</span>
+                    <span class="brand-name">Resume Dude</span>
+                </a>
+                <nav class="landing-nav-actions" aria-label="Primary navigation">
+                    <a href="#howItWorks" class="nav-text-link" data-nav-target="howItWorks">How It Works</a>
+                    <a href="#privacy" class="nav-text-link" data-nav-target="privacy">Privacy</a>
+                    <a href="#careerResources" class="nav-text-link" data-nav-target="careerResources">Career Resources</a>
+                    <div class="header-social-group" role="group" aria-label="Naukri Hub social links">
+                        <a href="https://www.instagram.com/naukri__hub/" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-instagram" title="Follow us on Instagram" aria-label="Follow us on Instagram" data-tooltip="Follow us on Instagram">
+                            <svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://thecrumb.co/Naukri_hub?search=WhatsApp+channel" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-whatsapp" title="Join our WhatsApp Channel" aria-label="Join our WhatsApp Channel" data-tooltip="Join our WhatsApp Channel">
+                            <svg class="social-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.79 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.18-4.94-4.38-.14-.19-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.77-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.39-.24.65-.14.27.1 1.69.8 1.98.94.29.15.48.22.55.34.07.12.07.69-.17 1.37z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm" id="navOpenBuilderBtn">Open Builder</button>
+                </nav>
+            </div>
+            <nav class="landing-mobile-subnav" aria-label="Section navigation">
+                <a href="#howItWorks" class="nav-text-link" data-nav-target="howItWorks">How It Works</a>
+                <a href="#privacy" class="nav-text-link" data-nav-target="privacy">Privacy</a>
+                <a href="#careerResources" class="nav-text-link" data-nav-target="careerResources">Career Resources</a>
+            </nav>
+        </header>
+
+        <main id="top" class="landing-main">
+            <section class="hero-section" aria-labelledby="heroHeading">
+                <div class="hero-copy">
+                    <p class="hero-eyebrow">ATS Resume Builder for Students &amp; Freshers</p>
+                    <h1 id="heroHeading" class="hero-title">
+                        <span class="hero-line">No Experience?</span>
+                        <span class="hero-line">No Stress.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Create a professional, ATS-friendly resume without struggling with complicated templates.
+                    </p>
+                    <div class="hero-cta-row">
+                        <button type="button" class="btn btn-primary btn-lg" id="heroBuildBtn">
+                            Build My Resume
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                        <a href="#howItWorks" class="btn btn-secondary btn-lg" id="heroHowItWorksBtn">See How It Works</a>
+                    </div>
+                    <p class="hero-trust-note">
+                        <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        No sign-up required. Drafts are saved directly in your browser's local storage.
+                    </p>
+                </div>
+
+                <!-- Realistic Product Preview Visual -->
+                <div class="hero-preview-frame" role="img" aria-label="Sample A4 ATS Document Preview">
+                    <div class="hero-preview-chrome">
+                        <span class="chrome-label">A4 ATS Document Preview</span>
+                        <span class="chrome-meta">Single-page PDF</span>
+                    </div>
+                    <article class="sample-sheet" aria-hidden="true">
+                        <header class="sample-sheet-head">
+                            <h2>AARAV SHARMA</h2>
+                            <p>Bengaluru, Karnataka | +91 98765 43210 | aarav.sharma@email.com | LinkedIn | GitHub</p>
+                        </header>
+                        <section class="sample-sec">
+                            <h3>PROFESSIONAL SUMMARY</h3>
+                            <p>Computer Science graduate (2025) with hands-on project experience in Python, SQL, and responsive web development. Seeking an entry-level software role to deliver reliable, maintainable code.</p>
+                        </section>
+                        <section class="sample-sec">
+                            <h3>EDUCATION</h3>
+                            <div class="sample-row">
+                                <strong>B.Tech in Computer Science</strong>
+                                <span>2021 – 2025</span>
+                            </div>
+                            <p class="sample-sub">Visvesvaraya Technological University • CGPA: 8.4 / 10</p>
+                        </section>
+                        <section class="sample-sec">
+                            <h3>PROJECTS</h3>
+                            <div class="sample-row">
+                                <strong>Campus Placement Tracker</strong>
+                                <span>Python, SQL, HTML/CSS</span>
+                            </div>
+                            <ul>
+                                <li>Built a searchable database for 120+ student applications and interview schedules.</li>
+                                <li>Automated eligibility filtering using structured SQL queries.</li>
+                            </ul>
+                        </section>
+                        <section class="sample-sec">
+                            <h3>SKILLS</h3>
+                            <p><strong>Technical:</strong> Python, SQL, HTML5, CSS3, JavaScript, Git</p>
+                            <p><strong>Soft Skills:</strong> Problem Solving, Communication, Teamwork</p>
+                        </section>
+                    </article>
+                </div>
+            </section>
+
+            <section id="howItWorks" class="steps-overview" aria-labelledby="howItWorksHeading">
+                <div class="section-intro">
+                    <h2 id="howItWorksHeading">Three straightforward steps to a clean resume</h2>
+                    <p>Built to keep formatting consistent while letting you focus on your skills, projects, and education.</p>
+                </div>
+                <div class="workflow-grid">
+                    <div class="workflow-item">
+                        <span class="workflow-num">STEP 1</span>
+                        <h3>Enter your details</h3>
+                        <p>Move through seven clear steps covering contact links, education, skills, projects, and optional credentials.</p>
+                    </div>
+                    <div class="workflow-connector" aria-hidden="true">
+                        <svg class="workflow-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"></path>
+                            <path d="m13 6 6 6-6 6"></path>
+                        </svg>
+                    </div>
+                    <div class="workflow-item">
+                        <span class="workflow-num">STEP 2</span>
+                        <h3>Improve your resume</h3>
+                        <p>Review objective ATS readiness checks, refine casual notes into concise summaries, and pick a clean typeset layout.</p>
+                    </div>
+                    <div class="workflow-connector" aria-hidden="true">
+                        <svg class="workflow-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"></path>
+                            <path d="m13 6 6 6-6 6"></path>
+                        </svg>
+                    </div>
+                    <div class="workflow-item">
+                        <span class="workflow-num">STEP 3</span>
+                        <h3>Download and apply</h3>
+                        <p>Export a single-page, text-selectable A4 PDF generated directly on your device—ready for job portals.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="privacy" class="trust-band" aria-labelledby="privacyHeading">
+                <div class="trust-band-inner">
+                    <h2 id="privacyHeading">Your data stays on your device</h2>
+                    <p>Resume Dude runs in your browser. Your resume content is never sent to our servers, and nothing is sold to third parties.</p>
+                </div>
+            </section>
+
+            <section id="careerResources" class="trust-band trust-band-resources" aria-labelledby="careerResourcesHeading">
+                <div class="trust-band-inner">
+                    <h2 id="careerResourcesHeading">Career resources by Naukri Hub</h2>
+                    <p>Looking for entry-level openings, internships, and learning updates? Follow Naukri Hub for regular career posts.</p>
+                    <div class="trust-links">
+                        <a href="https://www.instagram.com/naukri__hub/" target="_blank" rel="noopener noreferrer" class="text-action-link inline-social-link">
+                            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            Instagram (@naukri__hub)
+                        </a>
+                        <span class="dot-sep" aria-hidden="true">·</span>
+                        <a href="https://thecrumb.co/Naukri_hub?search=WhatsApp+channel" target="_blank" rel="noopener noreferrer" class="text-action-link inline-social-link">
+                            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.79 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.18-4.94-4.38-.14-.19-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.77-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.39-.24.65-.14.27.1 1.69.8 1.98.94.29.15.48.22.55.34.07.12.07.69-.17 1.37z"/></svg>
+                            WhatsApp Channel
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <noscript>
+        <p class="noscript-banner">Resume Dude needs JavaScript enabled to build and export a resume.</p>
+    </noscript>
+
+    <!-- RESUME BUILDER WORKSPACE -->
+    <div id="builderView" class="builder-view" hidden>
+        <h1 class="visually-hidden">Resume Builder</h1>
+        <header class="builder-header">
+            <div class="header-left">
+                <button type="button" class="brand-btn" id="backToLandingBtn" title="Return to overview" aria-label="Resume Dude — Return to overview">
+                    <span class="brand-mark brand-mark-sm" aria-hidden="true">RD</span>
+                    <span class="brand-name-header">Resume Dude</span>
+                </button>
+                <span class="header-divider" aria-hidden="true"></span>
+                <button type="button" class="draft-pill-btn" id="openDraftsHeaderBtn" title="Manage saved drafts">
+                    <span id="activeDraftTitle">Untitled Draft</span>
+                    <svg class="icon icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+            </div>
+
+            <div class="header-right">
+                <div class="save-status-pill" id="saveStatusPill" role="status" aria-live="polite">
+                    <span class="save-dot" aria-hidden="true"></span>
+                    <span id="saveStatusText">Saved</span>
+                </div>
+
+                <!-- Mobile/Tablet Edit vs Preview Switch -->
+                <div class="view-switcher" aria-label="Workspace view">
+                    <button type="button" class="view-switch-btn active" id="tabFormBtn" aria-pressed="true" aria-controls="formContainer">Edit</button>
+                    <button type="button" class="view-switch-btn" id="tabPreviewBtn" aria-pressed="false" aria-controls="previewContainer">Preview</button>
+                </div>
+
+                <div class="more-menu-wrap">
+                    <button type="button" class="icon-btn" id="moreOptionsBtn" aria-haspopup="true" aria-expanded="false" aria-controls="moreOptionsMenu" aria-label="More options">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                        <span class="more-label">Options</span>
+                    </button>
+                    <div class="dropdown-menu" id="moreOptionsMenu" hidden>
+                        <button type="button" class="dropdown-item" id="menuDraftsBtn">Saved Drafts</button>
+                        <button type="button" class="dropdown-item" id="menuNewResumeBtn">New Blank Resume</button>
+                        <button type="button" class="dropdown-item" id="menuPrivacyBtn">How Data Is Stored</button>
+                        <hr class="dropdown-sep">
+                        <button type="button" class="dropdown-item" id="menuOverviewBtn">Back to Landing Page</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="workspace-shell">
+            <!-- LEFT EDITOR PANE -->
+            <section class="editor-pane" id="formContainer" aria-label="Resume Editor">
+                <!-- Guided 7-Step Stepper -->
+                <div class="stepper-bar">
+                    <div class="stepper-meta-row">
+                        <span class="step-counter" id="stepCounterLabel">Step 1 of 7</span>
+                        <span class="step-current-name" id="stepCurrentName">Personal Information</span>
+                    </div>
+                    <div class="stepper-progress-track" aria-hidden="true">
+                        <div class="stepper-progress-fill" id="stepperProgressFill"></div>
+                    </div>
+                    <nav class="stepper-pills" id="stepperPills" aria-label="Resume steps">
+                        <button type="button" class="step-pill active" data-step="0">1. Personal</button>
+                        <button type="button" class="step-pill" data-step="1">2. Summary</button>
+                        <button type="button" class="step-pill" data-step="2">3. Education</button>
+                        <button type="button" class="step-pill" data-step="3">4. Skills</button>
+                        <button type="button" class="step-pill" data-step="4">5. Projects &amp; Exp</button>
+                        <button type="button" class="step-pill" data-step="5">6. Additional</button>
+                        <button type="button" class="step-pill" data-step="6">7. Review &amp; PDF</button>
+                    </nav>
+                </div>
+
+                <!-- Inline New Resume Confirmation -->
+                <div class="inline-confirm-bar" id="newResumeConfirmBar" role="region" aria-label="Confirm new resume" hidden>
+                    <span class="inline-confirm-text">Clear the active resume and start a blank draft? Saved drafts in your library stay intact unless deleted.</span>
+                    <div class="inline-confirm-actions">
+                        <button type="button" class="btn btn-danger btn-sm" id="confirmNewResumeBtn">Clear &amp; Start Blank</button>
+                        <button type="button" class="btn btn-ghost btn-sm" id="cancelNewResumeBtn">Cancel</button>
+                    </div>
+                </div>
+
+                <form id="resumeForm" class="editor-form" novalidate>
+                    <!-- STEP 1: PERSONAL INFORMATION -->
+                    <div class="wizard-step active" data-step-panel="0">
+                        <div class="step-header">
+                            <h2>Personal Information</h2>
+                            <p>Add your contact details and verified profile links so recruiters can reach you.</p>
+                        </div>
+
+                        <div class="field-grid">
+                            <div class="field-item field-full">
+                                <label for="inputName">Full Name <span class="req-mark">*</span></label>
+                                <input type="text" id="inputName" placeholder="e.g. Aarav Sharma" autocomplete="name" required>
+                                <p class="field-help">Use Latin letters. Accents are converted automatically; other scripts cannot be shown in the PDF.</p>
+                            </div>
+                            <div class="field-item">
+                                <label for="inputEmail">Email Address <span class="req-mark">*</span></label>
+                                <input type="email" id="inputEmail" placeholder="e.g. aarav@email.com" autocomplete="email" required>
+                            </div>
+                            <div class="field-item">
+                                <label for="inputPhone">Phone Number <span class="req-mark">*</span></label>
+                                <input type="tel" id="inputPhone" placeholder="e.g. +91 98765 43210" autocomplete="tel" required>
+                            </div>
+                            <div class="field-item field-full">
+                                <label for="inputLocation">City and State <span class="req-mark">*</span></label>
+                                <input type="text" id="inputLocation" placeholder="e.g. Hyderabad, Telangana" autocomplete="address-level2" required>
+                            </div>
+                        </div>
+
+                        <div class="subsection-divider">
+                            <span>Profile Links <em class="opt-tag">Optional</em></span>
+                        </div>
+                        <div class="field-grid">
+                            <div class="field-item field-full">
+                                <label for="inputLinkedin">LinkedIn URL</label>
+                                <input type="url" id="inputLinkedin" placeholder="e.g. linkedin.com/in/username">
+                            </div>
+                            <div class="field-item">
+                                <label for="inputGithub">GitHub URL</label>
+                                <input type="url" id="inputGithub" placeholder="e.g. github.com/username">
+                            </div>
+                            <div class="field-item">
+                                <label for="inputPortfolio">Portfolio / Website URL</label>
+                                <input type="url" id="inputPortfolio" placeholder="e.g. yourname.dev">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: PROFESSIONAL SUMMARY -->
+                    <div class="wizard-step" data-step-panel="1" hidden>
+                        <div class="step-header">
+                            <h2>Professional Summary</h2>
+                            <p>Write 2–4 concise sentences about your academic background, strengths, and target role.</p>
+                        </div>
+
+                        <div class="field-item">
+                            <div class="label-row">
+                                <label for="inputSummary">Summary <span class="opt-tag">Recommended</span></label>
+                                <span class="char-meta" id="summaryWordCount">0 words</span>
+                            </div>
+                            <textarea id="inputSummary" rows="6" placeholder="Write directly, or type simple notes like 'I know Python, I know HTML, B.Tech fresher' and use the assistant below to convert it from your details."></textarea>
+                            <p class="field-help">Keep it factual and free of buzzwords. Aim for 25–60 words.</p>
+                        </div>
+
+                        <div class="assistant-toolbar" aria-label="Summary helpers">
+                            <button type="button" class="btn btn-secondary btn-sm" id="autoGenSummaryBtn">Generate from My Details</button>
+                            <button type="button" class="btn btn-ghost btn-sm" id="pasteSummaryBtn">Paste Notes</button>
+                            <select id="summaryTemplateSelect" class="compact-select" aria-label="Optional summary starter template">
+                                <option value="" selected>Starter templates (optional)...</option>
+                                <option value="2">Entry-Level / Graduate (Fresher)</option>
+                                <option value="3">Technical / Software Role</option>
+                                <option value="1">General / Results-Driven</option>
+                                <option value="7">Analytical / Data Role</option>
+                                <option value="5">Operations / Coordinator</option>
+                                <option value="4">Creative / Content Role</option>
+                                <option value="6">Customer Success / Sales</option>
+                                <option value="9">Administrative / Support</option>
+                                <option value="10">Career Transition</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3: EDUCATION -->
+                    <div class="wizard-step" data-step-panel="2" hidden>
+                        <div class="step-header">
+                            <h2>Education</h2>
+                            <p>List your highest or most recent qualification first. Passing years automatically align on the right.</p>
+                        </div>
+
+                        <div class="edu-block">
+                            <div class="edu-block-head">
+                                <h3>Graduation / Under-Graduation <span class="req-mark">*</span></h3>
+                            </div>
+                            <div class="field-grid">
+                                <div class="field-item field-full">
+                                    <label for="eduDegree1">Degree &amp; Specialization <span class="req-mark">*</span></label>
+                                    <input type="text" id="eduDegree1" placeholder="e.g. B.Tech in Computer Science / B.Sc in Statistics" required>
+                                </div>
+                                <div class="field-item field-full">
+                                    <label for="eduSchool1">College / University Name <span class="req-mark">*</span></label>
+                                    <input type="text" id="eduSchool1" placeholder="e.g. Osmania University" required>
+                                </div>
+                                <div class="field-item">
+                                    <label for="eduYear1">Passing Year <span class="req-mark">*</span></label>
+                                    <input type="text" id="eduYear1" placeholder="e.g. 2022 – 2025" required>
+                                </div>
+                                <div class="field-item">
+                                    <label for="eduScore1">CGPA / Percentage <span class="opt-tag">Optional</span></label>
+                                    <input type="text" id="eduScore1" placeholder="e.g. 8.2 CGPA or 78%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Post-Graduation Collapsible -->
+                        <div class="collapsible-block">
+                            <div class="collapsible-head">
+                                <div>
+                                    <h3>Post-Graduation</h3>
+                                    <span class="opt-tag">Optional (MCA, MBA, M.Tech, M.Sc)</span>
+                                </div>
+                                <button type="button" class="btn btn-ghost btn-sm" id="toggleEduPgBtn" aria-expanded="false" aria-controls="eduPgWrapper">Add</button>
+                            </div>
+                            <div id="eduPgWrapper" class="collapsible-body" hidden>
+                                <div class="field-grid">
+                                    <div class="field-item field-full">
+                                        <label for="eduDegreePG">Degree Name</label>
+                                        <input type="text" id="eduDegreePG" placeholder="e.g. Master of Computer Applications (MCA)">
+                                    </div>
+                                    <div class="field-item field-full">
+                                        <label for="eduSchoolPG">University / College Name</label>
+                                        <input type="text" id="eduSchoolPG" placeholder="e.g. Anna University">
+                                    </div>
+                                    <div class="field-item">
+                                        <label for="eduYearPG">Passing Year</label>
+                                        <input type="text" id="eduYearPG" placeholder="e.g. 2025 – 2027">
+                                    </div>
+                                    <div class="field-item">
+                                        <label for="eduScorePG">CGPA / Percentage</label>
+                                        <input type="text" id="eduScorePG" placeholder="e.g. 8.5 CGPA">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Class 12 Collapsible -->
+                        <div class="collapsible-block">
+                            <div class="collapsible-head">
+                                <div>
+                                    <h3>Intermediate / Class 12</h3>
+                                    <span class="opt-tag">Optional</span>
+                                </div>
+                                <button type="button" class="btn btn-ghost btn-sm" id="toggleEdu12Btn" aria-expanded="true" aria-controls="edu12Wrapper">Hide</button>
+                            </div>
+                            <div id="edu12Wrapper" class="collapsible-body">
+                                <div class="field-grid">
+                                    <div class="field-item field-full">
+                                        <label for="eduStream2">Stream</label>
+                                        <select id="eduStream2">
+                                            <option value="" selected>Select Stream (Optional)</option>
+                                            <option value="MPC">MPC (Mathematics, Physics, Chemistry)</option>
+                                            <option value="BIPC">BIPC (Biology, Physics, Chemistry)</option>
+                                            <option value="CEC">CEC (Commerce, Economics, Civics)</option>
+                                            <option value="MEC">MEC (Mathematics, Economics, Commerce)</option>
+                                            <option value="Others">Others (Specify below)</option>
+                                        </select>
+                                    </div>
+                                    <div class="field-item field-full" id="eduStreamCustomWrap" hidden>
+                                        <label for="eduStreamCustom2">Custom Stream</label>
+                                        <input type="text" id="eduStreamCustom2" placeholder="Specify your Class 12 stream">
+                                    </div>
+                                    <div class="field-item field-full">
+                                        <label for="eduSchool2">Junior College / School Name</label>
+                                        <input type="text" id="eduSchool2" placeholder="e.g. Narayana Junior College">
+                                    </div>
+                                    <div class="field-item">
+                                        <label for="eduYear2">Passing Year</label>
+                                        <input type="text" id="eduYear2" placeholder="e.g. 2020 – 2022">
+                                    </div>
+                                    <div class="field-item">
+                                        <label for="eduScore2">Percentage / CGPA</label>
+                                        <input type="text" id="eduScore2" placeholder="e.g. 86%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Class 10 Collapsible -->
+                        <div class="collapsible-block">
+                            <div class="collapsible-head">
+                                <div>
+                                    <h3>Class 10 / Secondary School</h3>
+                                    <span class="opt-tag">Optional</span>
+                                </div>
+                                <button type="button" class="btn btn-ghost btn-sm" id="toggleEdu10Btn" aria-expanded="true" aria-controls="edu10Wrapper">Hide</button>
+                            </div>
+                            <div id="edu10Wrapper" class="collapsible-body">
+                                <div class="field-grid">
+                                    <div class="field-item field-full">
+                                        <label for="eduBoard3">Board Name</label>
+                                        <input type="text" id="eduBoard3" placeholder="e.g. CBSE / State Board / ICSE">
+                                    </div>
+                                    <div class="field-item field-full">
+                                        <label for="eduSchool3">School Name</label>
+                                        <input type="text" id="eduSchool3" placeholder="e.g. Kendriya Vidyalaya">
+                                    </div>
+                                    <div class="field-item">
+                                        <label for="eduYear3">Passing Year</label>
+                                        <input type="text" id="eduYear3" placeholder="e.g. 2020">
+                                    </div>
+                                    <div class="field-item">
+                                        <label for="eduScore3">CGPA / Percentage</label>
+                                        <input type="text" id="eduScore3" placeholder="e.g. 92%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Extra Custom Education Entries -->
+                        <div class="subsection-action-row">
+                            <div>
+                                <h3>Additional Qualifications</h3>
+                                <p class="field-help">Add a diploma, minor, or additional degree if applicable.</p>
+                            </div>
+                            <button type="button" class="btn btn-secondary btn-sm" id="addCustomEduBtn">+ Add Entry</button>
+                        </div>
+                        <div id="customEduContainer" class="dynamic-container"></div>
+                    </div>
+
+                    <!-- STEP 4: SKILLS -->
+                    <div class="wizard-step" data-step-panel="3" hidden>
+                        <div class="step-header">
+                            <h2>Skills</h2>
+                            <p>Group technical skills cleanly and choose or type soft skills relevant to your target roles.</p>
+                        </div>
+
+                        <div class="collapsible-block">
+                            <div class="collapsible-head">
+                                <div>
+                                    <h3>Technical Skills</h3>
+                                    <span class="opt-tag">Separate items with commas</span>
+                                </div>
+                                <button type="button" class="btn btn-ghost btn-sm" id="removeTechSectionBtn" aria-expanded="true" aria-controls="techSkillsWrapper">Hide Section</button>
+                            </div>
+                            <div id="techSkillsWrapper" class="collapsible-body">
+                                <div class="field-grid">
+                                    <div class="field-item field-full">
+                                        <label for="inputLang">Programming Languages</label>
+                                        <input type="text" id="inputLang" placeholder="e.g. Python, Java, SQL, C">
+                                    </div>
+                                    <div class="field-item field-full">
+                                        <label for="inputWeb">Web Technologies &amp; Frameworks</label>
+                                        <input type="text" id="inputWeb" placeholder="e.g. HTML5, CSS3, JavaScript, React">
+                                    </div>
+                                    <div class="field-item field-full">
+                                        <label for="inputDB">Databases &amp; Tools</label>
+                                        <input type="text" id="inputDB" placeholder="e.g. MySQL, Git, GitHub, MS Excel">
+                                    </div>
+                                    <div class="field-item field-full">
+                                        <label for="inputConcepts">Core Concepts</label>
+                                        <input type="text" id="inputConcepts" placeholder="e.g. OOP, Data Structures, DBMS">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="subsection-action-row mt-20">
+                            <div>
+                                <h3>Custom Skill Groups <em class="opt-tag">Optional</em></h3>
+                                <p class="field-help">For domain tools (e.g. Design: Figma, Canva or Accounting: Tally, GST).</p>
+                            </div>
+                            <button type="button" class="btn btn-secondary btn-sm" id="addCustomSkillGroupBtn">+ Add Group</button>
+                        </div>
+                        <div id="customSkillGroupsContainer" class="dynamic-container"></div>
+
+                        <div class="soft-skills-section">
+                            <div class="subsection-divider">
+                                <span>Soft Skills</span>
+                            </div>
+                            <p class="field-help">Select common strengths or type your own below.</p>
+                            <div class="soft-presets-wrapper" id="softSkillPresets" role="group" aria-label="Quick select soft skills"></div>
+                            <div class="inline-input-action">
+                                <input type="text" id="softSkillsInput" aria-label="Custom soft skill" placeholder="Type a custom soft skill and press Enter">
+                                <button type="button" class="btn btn-secondary btn-sm" id="addSoftTagBtn">Add</button>
+                            </div>
+                            <div id="softTagsContainer" class="tags-container"></div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 5: PROJECTS AND EXPERIENCE -->
+                    <div class="wizard-step" data-step-panel="4" hidden>
+                        <div class="step-header">
+                            <h2>Projects &amp; Experience</h2>
+                            <p>Freshers do not need formal work history—strong academic or personal projects demonstrate practical skill effectively.</p>
+                        </div>
+
+                        <!-- Projects First (Fresher-friendly) -->
+                        <div class="subsection-action-row">
+                            <div>
+                                <h3>Projects <span class="opt-tag">Recommended for Freshers</span></h3>
+                                <p class="field-help">Include college capstones, personal builds, or data analyses.</p>
+                            </div>
+                            <button type="button" class="btn btn-secondary btn-sm" id="addProjectBtn">+ Add Project</button>
+                        </div>
+                        <div id="projectsEmptyState" class="empty-state-box">
+                            <p>No projects added yet. Adding 1–2 projects with technologies and outcomes substantially strengthens an entry-level resume.</p>
+                        </div>
+                        <div id="projectsContainer" class="dynamic-container"></div>
+
+                        <!-- Work Experience / Internships Independent Section -->
+                        <div class="subsection-action-row mt-24">
+                            <div>
+                                <h3>Internships &amp; Work Experience <em class="opt-tag">Optional</em></h3>
+                                <p class="field-help">Add internships, apprenticeships, part-time roles, or full-time jobs.</p>
+                            </div>
+                            <button type="button" class="btn btn-secondary btn-sm" id="addExpBtn">+ Add Experience</button>
+                        </div>
+                        <div id="expEmptyState" class="empty-state-box">
+                            <p>No internships or work experience added. Leave blank if you are a fresher applying with projects and education.</p>
+                        </div>
+                        <div id="expContainer" class="dynamic-container"></div>
+                    </div>
+
+                    <!-- STEP 6: ADDITIONAL INFORMATION -->
+                    <div class="wizard-step" data-step-panel="5" hidden>
+                        <div class="step-header">
+                            <h2>Additional Information</h2>
+                            <p>Only enable the sections you actually want on your resume. Empty sections remain hidden from the final document.</p>
+                        </div>
+
+                        <!-- Certifications -->
+                        <div class="collapsible-block">
+                            <div class="collapsible-head">
+                                <div>
+                                    <h3>Certifications</h3>
+                                    <span class="opt-tag">Optional</span>
+                                </div>
+                                <div class="section-btn-group">
+                                    <button type="button" class="btn btn-ghost btn-sm" id="certGuideBtn">Examples</button>
+                                    <button type="button" class="btn btn-secondary btn-sm" id="addCertBtn">+ Add</button>
+                                </div>
+                            </div>
+                            <div id="certsContainer" class="dynamic-container mt-10"></div>
+                        </div>
+
+                        <!-- Achievements -->
+                        <div class="collapsible-block">
+                            <div class="collapsible-head">
+                                <div>
+                                    <h3>Achievements</h3>
+                                    <span class="opt-tag">Optional</span>
+                                </div>
+                                <div class="section-btn-group">
+                                    <button type="button" class="btn btn-ghost btn-sm" id="achieveGuideBtn">Examples</button>
+                                    <button type="button" class="btn btn-secondary btn-sm" id="addAchieveBtn">+ Add</button>
+                                </div>
+                            </div>
+                            <div id="achieveContainer" class="dynamic-container mt-10"></div>
+                        </div>
+
+                        <!-- Relevant Coursework -->
+                        <div class="collapsible-block">
+                            <div class="collapsible-head">
+                                <div>
+                                    <h3>Relevant Coursework</h3>
+                                    <span class="opt-tag">Optional</span>
+                                </div>
+                                <button type="button" class="btn btn-ghost btn-sm" id="toggleCourseworkBtn" aria-expanded="false" aria-controls="courseworkWrapper">Add</button>
+                            </div>
+                            <div id="courseworkWrapper" class="collapsible-body" hidden>
+                                <div class="field-item">
+                                    <label for="inputCoursework">Subjects / Modules</label>
+                                    <input type="text" id="inputCoursework" placeholder="e.g. Database Management Systems, Operating Systems, Statistics">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Languages Known -->
+                        <div class="collapsible-block">
+                            <div class="collapsible-head">
+                                <div>
+                                    <h3>Languages Known</h3>
+                                    <span class="opt-tag">Read, Write, Speak</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary btn-sm" id="addLangBtn">+ Add Language</button>
+                            </div>
+                            <div id="languagesContainer" class="dynamic-container mt-10"></div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 7: REVIEW & DOWNLOAD -->
+                    <div class="wizard-step" data-step-panel="6" hidden>
+                        <div class="step-header">
+                            <h2>Review &amp; Download</h2>
+                            <p>Choose your template and typography, inspect ATS readiness diagnostics, and export a single-page A4 PDF.</p>
+                        </div>
+
+                        <!-- Template & Formatting Controls -->
+                        <div class="panel-box">
+                            <h3 class="panel-heading">Document Formatting</h3>
+                            <div class="field-grid">
+                                <div class="field-item">
+                                    <label for="templateSelect">ATS Template</label>
+                                    <select id="templateSelect">
+                                        <option value="classic" selected>Classic Centered</option>
+                                        <option value="modern">Modern Left-Aligned</option>
+                                        <option value="academic">Academic &amp; Fresher</option>
+                                    </select>
+                                </div>
+                                <div class="field-item">
+                                    <label for="fontSelect">Typeface</label>
+                                    <select id="fontSelect">
+                                        <option value="arial" selected>Arial / Helvetica</option>
+                                        <option value="calibri">Calibri</option>
+                                        <option value="times">Times New Roman</option>
+                                        <option value="georgia">Georgia</option>
+                                    </select>
+                                </div>
+                                <div class="field-item field-full">
+                                    <label for="spacingSelect">Page Density</label>
+                                    <select id="spacingSelect">
+                                        <option value="auto" selected>Auto-Fit Single Page (Recommended)</option>
+                                        <option value="compact">Compact</option>
+                                        <option value="normal">Standard</option>
+                                        <option value="relaxed">Relaxed (Expanded)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Restrained ATS Readiness Diagnostic -->
+                        <div class="panel-box ats-panel" id="atsReadinessCard">
+                            <div class="ats-panel-head">
+                                <div>
+                                    <h3 class="panel-heading">ATS Readiness</h3>
+                                    <p class="ats-sub" id="atsReadinessSummary"></p>
+                                </div>
+                                <span class="ats-score-pill" id="atsScoreBadge">0%</span>
+                            </div>
+                            <div class="ats-progress-track" aria-hidden="true">
+                                <div class="ats-progress-fill" id="atsProgressFill"></div>
+                            </div>
+                            <ul class="ats-checks-list" id="atsChecksList"></ul>
+                            <p class="ats-disclaimer">
+                                Readiness reflects formatting, completeness, and specificity checks. It does not guarantee interview shortlisting.
+                            </p>
+                        </div>
+
+                        <!-- Export CTA -->
+                        <div class="export-box">
+                            <button type="button" class="btn btn-primary btn-lg btn-full" id="downloadBtn">
+                                Download A4 Resume (PDF)
+                            </button>
+                            <p class="export-note" id="exportPageNote">Exports a selectable, text-based A4 PDF directly in your browser.</p>
+                        </div>
+
+                        <!-- Subtle Career Resources Link -->
+                        <div class="subtle-resource-bar">
+                            <span>Career openings &amp; internships by Naukri Hub:</span>
+                            <div class="trust-links">
+                                <a href="https://www.instagram.com/naukri__hub/" target="_blank" rel="noopener noreferrer" class="text-action-link">Instagram</a>
+                                <span class="dot-sep" aria-hidden="true">·</span>
+                                <a href="https://thecrumb.co/Naukri_hub?search=WhatsApp+channel" target="_blank" rel="noopener noreferrer" class="text-action-link">WhatsApp Channel</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Persistent Step Navigation Bar (Desktop & Mobile) -->
+                <footer class="editor-footer-nav" id="editorFooterNav">
+                    <button type="button" class="btn btn-secondary" id="prevStepBtn" disabled>Back</button>
+                    <div class="footer-right-actions">
+                        <button type="button" class="btn btn-primary" id="nextStepBtn">Next: Summary</button>
+                    </div>
+                </footer>
+            </section>
+
+            <!-- RIGHT LIVE DOCUMENT PREVIEW PANE -->
+            <section class="preview-pane" id="previewContainer" aria-label="Live Resume Preview">
+                <div class="preview-toolbar">
+                    <div class="preview-toolbar-controls">
+                        <select id="previewTemplateQuick" class="toolbar-select" aria-label="Quick switch template">
+                            <option value="classic">Classic Centered</option>
+                            <option value="modern">Modern Left</option>
+                            <option value="academic">Academic</option>
+                        </select>
+                        <select id="previewFontQuick" class="toolbar-select" aria-label="Quick switch font">
+                            <option value="arial">Arial</option>
+                            <option value="calibri">Calibri</option>
+                            <option value="times">Times New Roman</option>
+                            <option value="georgia">Georgia</option>
+                        </select>
+                        <span class="page-fit-badge" id="previewPageBadge">Fits 1 page</span>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm" id="previewDownloadBtn">Download PDF</button>
+                </div>
+
+                <div class="preview-desk">
+                    <div class="resume-scale-wrapper" id="resumeScaleWrapper">
+                        <div id="resumeCanvas" class="resume-sheet template-classic font-arial spacing-normal"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- SAVED DRAFTS DIALOG -->
+    <div class="modal-backdrop" id="draftsModal" role="dialog" aria-modal="true" aria-labelledby="draftsModalTitle" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h2 id="draftsModalTitle" class="modal-title">Saved Drafts</h2>
+                <button type="button" class="close-modal-btn" id="closeDraftsModalBtn" aria-label="Close saved drafts">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">
+                    All drafts are stored locally in this browser's <code>localStorage</code>. Create separate versions for different roles.
+                </p>
+
+                <div class="inline-input-action mb-14">
+                    <input type="text" id="newDraftNameInput" aria-label="New draft name" placeholder="New draft title (e.g. Data Analyst Fresher)">
+                    <button type="button" class="btn btn-primary btn-sm" id="createDraftBtn">Create</button>
+                </div>
+
+                <div id="draftsListContainer" class="drafts-list"></div>
+
+                <!-- Inline Delete Draft Confirmation -->
+                <div class="inline-confirm-bar mt-12 mb-0" id="deleteDraftConfirmBar" hidden>
+                    <span class="inline-confirm-text" id="deleteDraftConfirmText">Delete this draft permanently?</span>
+                    <div class="inline-confirm-actions">
+                        <button type="button" class="btn btn-danger btn-sm" id="confirmDeleteDraftBtn">Delete</button>
+                        <button type="button" class="btn btn-ghost btn-sm" id="cancelDeleteDraftBtn">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXAMPLES / SUGGESTIONS DIALOG -->
+    <div class="modal-backdrop" id="guideModal" role="dialog" aria-modal="true" aria-labelledby="guideModalTitle" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h2 id="guideModalTitle" class="modal-title">Examples</h2>
+                <button type="button" class="close-modal-btn" id="closeGuideModalBtn" aria-label="Close examples">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">Select an example below to insert it as a starting point, then edit it to reflect your actual record:</p>
+                <div id="guideSuggestionsList" class="guide-list-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DATA & PRIVACY DIALOG -->
+    <div class="modal-backdrop" id="privacyModal" role="dialog" aria-modal="true" aria-labelledby="privacyModalTitle" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h2 id="privacyModalTitle" class="modal-title">How Your Data Is Stored</h2>
+                <button type="button" class="close-modal-btn" id="closePrivacyModalBtn" aria-label="Close privacy dialog">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="privacy-points">
+                    <p><strong>100% client-side storage:</strong> Everything you type is saved directly inside your browser's <code>localStorage</code> under your device profile.</p>
+                    <p><strong>No account or server sync:</strong> Resume Dude does not transmit your resume content, email, or phone number to any server.</p>
+                    <p><strong>Browser clearing note:</strong> If you clear browser site data or use private/incognito browsing, locally saved drafts will be removed—download your PDF once finished.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POST-DOWNLOAD NAUKRI HUB RECOMMENDATION -->
+    <div class="modal-backdrop" id="postDownloadModal" role="dialog" aria-modal="true" aria-labelledby="postDownloadTitle" aria-hidden="true">
+        <div class="modal-dialog post-download-dialog">
+            <div class="modal-header">
+                <span class="post-download-badge">Resume ready! Now let's find you a job.</span>
+                <button type="button" class="close-modal-btn" id="closePostDownloadBtn" aria-label="Close recommendation">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h2 id="postDownloadTitle" class="post-download-heading">Your resume is ready. What's next?</h2>
+                <p class="modal-desc post-download-copy">
+                    Struggling to find job opportunities? Follow Naukri Hub for daily job updates, fresher opportunities, work-from-home jobs and career resources.
+                </p>
+                <div class="post-download-actions">
+                    <a href="https://www.instagram.com/naukri__hub/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-full post-social-btn">
+                        <svg class="social-svg social-svg-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        Follow on Instagram
+                    </a>
+                    <a href="https://thecrumb.co/Naukri_hub?search=WhatsApp+channel" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-full post-social-btn">
+                        <svg class="social-svg social-svg-wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.79 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.18-4.94-4.38-.14-.19-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.77-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.39-.24.65-.14.27.1 1.69.8 1.98.94.29.15.48.22.55.34.07.12.07.69-.17 1.37z"/>
+                        </svg>
+                        Join WhatsApp Channel
+                    </a>
+                </div>
+                <button type="button" class="btn btn-ghost btn-sm btn-full post-download-dismiss" id="dismissPostDownloadBtn">Continue editing</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- NON-BLOCKING TOAST NOTIFICATIONS -->
+    <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
